@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <header class="header">
+            <nav class="nav">
+                <div><a href="#form">Form</a></div>
+                <div><a href="#img">Image</a></div>
+                <div><a href="#table">Table</a></div>
+            <nav/>
+        </header>
+
+        <main>
+            <form action="#" class="form" id="form">
+                <div class="head">
+                    <p>Оставьте свои контактные данные</p>
+                </div>
+                <div class="row">
+                    <input type="text" list="name" placeholder="Name">
+                    <datalist id="name">
+                        <option value="John">
+                        <option value="Sia">
+                        <option value="Jack">
+                        <option value="Eva">
+                    </datalist>
+                </div>
+                <div class="row">
+                    <input type="number" name="number" placeholder="Telephome number">
+                </div>
+                <div class="row">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+            </form>
+        </main>
+
+        <div class="img" id="img">
+            </span class="img1"><span>
+        </div>
+
+        <section class="table" id="table">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>skill-1<dialog open>This is an open dialog window</dialog></th>
+                    <th>skill-2</th>
+                    <th>skill-3</th>
+                </tr>
+                <tr>
+                    <td >User-1</td>
+                    <td>1483</td>
+                    <td>4532</td>
+                    <td>6743</td>
+                </tr>
+                <tr>
+                    <td>User-2</td>
+                    <td>3835</td>
+                    <td>7482</td>
+                    <td>7482</td>
+                </tr>
+                <tr>
+                    <td>User-3</td>
+                    <td>683</td>
+                    <td>80</td>
+                    <td>80</td>
+                </tr>
+            </table>
+        </section>
+        <div class="src">
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <track kind="captions">
+            </audio>
+        </div>
+        <div class="src">
+            <video controls>
+
+                <track kind="captions">
+            </video>
+        </div>
+        <div class="src" style="display:block" >
+            <h1>WBR tag</h1>
+            <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+        </div>
+        <div class="src" style="display:block" >
+            <article>
+                <h1>Article tag</h1>
+                <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+            </article>
+        </div>
+        <div class="src" style="display:block" >
+            <aside>
+                <h4>Aside tag</h4>
+                <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+            </aside>
+        </div>
+        <div class="src" style="display:block" >
+            <h1>bdi tag</h1>
+            <ul>
+                <li>User <bdi>hrefs</bdi>: 60 points</li>
+                <li>User <bdi>jdoe</bdi>: 80 points</li>
+                <li>User <bdi>إيان</bdi>: 90 points</li>
+            </ul>
+        </div>
+        <div class="src" style="display:block" >
+            <h1>Canvas tag</h1>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+        </div>>
+        <div class="src" style="display:block" >
+            <h1>Details tag</h1>
+            <details>
+                <summary>Copyright 1999-2018.</summary>
+                <p> - by Refsnes Data. All Rights Reserved.</p>
+                <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+            </details>
+        </div>>
+        <div class="src" style="display:block" >
+            <h1>embed tag</h1>
+            <embed src="helloworld.swf">
+        </div>>
+        <div class="src" style="display:block" >
+            <figure>
+                <h1>Fifure tag</h1>
+                <img src="img/nature.jpg" alt="Trulli" style="width:100%">
+                <figcaption>Nature</figcaption>
+            </figure>
+        </div>
+        <div class="src" style="display:block" >
+            <h1>Mark tag</h1>
+            <p>Do not forget to buy <mark>milk</mark> today.</p>
+        </div>
+        <div class="src" style="display:block" >
+            <h1>Meter tag</h1>
+            <meter value="2" min="0" max="10">2 out of 10</meter><br>
+            <meter value="0.6">60%</meter>
+        </div>
+         <div class="src" style="display:block" >
+             <h1>Output tag</h1>
+             <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                 <input type="range" id="a" value="50">100
+                 +<input type="number" id="b" value="50">
+                 =<output name="x" for="a b"></output>
+             </form>
+         </div>
+        <div class="src" style="display:block; width: 500px" >
+             <h1>Picture tag</h1>
+            <picture>
+                <source media="(miax-width: 650px)" srcset="img/nature.jpg">
+                <source media="(max-width: 465px)" srcset="img/nature.jpg">
+                <img src="img/nature.jpg" alt="Flowers" style="width:auto;">
+            </picture>
+         </div>
+
+    <footer  class="footer">
+        This is footer
+    </footer>
+    </body>
+    <script src="script/canvas.js"></script>
+</html>
