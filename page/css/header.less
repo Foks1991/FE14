@@ -1,0 +1,41 @@
+@import "variables";
+
+.header{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  &__nav{
+    margin-left: auto;
+  }
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  &__img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.nav__list{
+  display: flex;
+  list-style-type: none;
+}
+
+.link__href {
+  margin-right: 10px;
+  text-decoration: none;
+  color: lavender;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  transition: border .3s linear,color .3s linear;
+  padding: 0 10px 10px 10px;
+  border-bottom: rgba(251,230,235,.9);
+  &:hover{
+    border-bottom: 2px solid @red;
+    color: @red;
+  }
+}

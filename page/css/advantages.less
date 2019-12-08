@@ -1,0 +1,41 @@
+@import "variables";
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service{
+  width:306.6666px;
+  text-align: center;
+  height: 300px;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  cursor: pointer;
+  &__title{
+    padding: 20px;
+    font-size: 22px;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    transition: color 0.3s;
+    &:hover{
+      color:@red;
+    }
+  }
+  &__description{
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: rgb(140, 140, 140);
+    line-height: 1.714;
+    text-align: center;
+    transition: color 0.3s;
+    &:hover{
+      color:@red;
+    }
+  }
+}
