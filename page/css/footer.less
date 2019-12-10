@@ -1,0 +1,42 @@
+@import "variables";
+
+.footer {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  &__icons{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.icons__item {
+  margin: 0 15px;
+  list-style-type: none;
+}
+
+.images_networks {
+  width: 50px;
+  cursor: pointer;
+}
+
+.images_networks {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: .5s
+}
+
+.images_networks:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0)
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff
+}
