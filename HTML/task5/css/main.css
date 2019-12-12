@@ -38,7 +38,7 @@ a {
   text-decoration: none;
   color: lavender;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   border-bottom: rgba(251, 230, 235, 0.9);
   transition: color 0.5s;
 }
@@ -105,6 +105,43 @@ a {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+li.nes:hover .nest {
+  display: flex;
+}
+li.nes:after {
+  content: "↓";
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+ul.nest {
+  position: absolute;
+  z-index: 5;
+  margin-top: 5px;
+  background-color: #E6E6FA;
+  color: grey;
+  display: none;
+  flex-direction: column;
+  font-size: 16px;
+}
+ul.nest li {
+  transition: color 0.5s;
+  border-bottom: 1px solid black;
+}
+ul.nest li:last-child {
+  border-bottom: none;
+}
+ul.nest li:hover {
+  color: #EC002B;
+}
+@media (max-width: 610px) {
+  li.nes:hover .nest {
+    display: none;
+  }
+  li.nes:after {
+    content: "";
+  }
 }
 @media (min-width: 610px) {
   .header li {

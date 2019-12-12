@@ -46,7 +46,7 @@ a {
   text-decoration: none;
   color: lavender;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
   border-bottom: rgba(251,230,235,.9);
   transition: color 0.5s;
 }
@@ -125,6 +125,46 @@ a {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+
+li.nes:hover .nest{
+  display: flex;
+}
+li.nes:after{
+  content: "↓";
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul.nest{
+  position: absolute;
+  z-index: 5;
+  margin-top: 5px;
+  background-color: @lavender;
+  color:grey;
+  display: none;
+  flex-direction: column;
+  font-size: 16px;
+  & li{
+    transition: color 0.5s;
+    border-bottom: 1px solid black;
+  }
+  & li:last-child{
+    border-bottom: none;
+  }
+  & li:hover{
+    color: @red;
+  }
+}
+
+@media (max-width:610px) {
+  li.nes:hover .nest {
+    display: none;
+  }
+  li.nes:after{
+    content: "";
+  }
 }
 
 @media (min-width:610px) {
