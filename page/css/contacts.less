@@ -2,11 +2,13 @@
 
 .aboutUs__city-info {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .city-info {
   display: flex;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   overflow: hidden;
   &__map{
     width: 60%;
@@ -14,6 +16,7 @@
   }
   &__address{
     width: 40%;
+    height: 300px;
     padding: 40px 0 0 50px;
     font-size: 18px;
     background-color: @lavender;
@@ -31,4 +34,20 @@
 .address_address__mail, .address_address__phone, .address_address__street {
   padding: 0 20px 0 10px;
   margin: 10px
+}
+
+@media (max-width:980px) {
+  .aboutUs__city-info{
+    flex-wrap: wrap;
+  }
+  .city-info {
+    &__map {
+      width: 100%;
+    }
+
+    &__address {
+      width: 100%;
+      margin:20px 0;
+    }
+  }
 }

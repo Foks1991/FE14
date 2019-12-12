@@ -1,10 +1,12 @@
 @import "variables";
 
-.header{
+.header1{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 15px;
+  padding:15px;
   &__nav{
     margin-left: auto;
   }
@@ -19,6 +21,8 @@
   }
 }
 
+//-----------------------Nav Menu
+
 .nav__list{
   display: flex;
   list-style-type: none;
@@ -31,11 +35,132 @@
   text-transform: uppercase;
   font-weight: 500;
   font-size: 18px;
-  transition: border .3s linear,color .3s linear;
+
   padding: 0 10px 10px 10px;
   border-bottom: rgba(251,230,235,.9);
   &:hover{
     border-bottom: 2px solid @red;
     color: @red;
+  }
+}
+
+//---------------------Burger Menu
+
+.header{
+  min-height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lbl{
+  position: absolute;
+  top:0;
+}
+div.nav__wrap{
+  width: 100%;
+  margin:20px auto 0 auto;
+
+}
+
+a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: lavender;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  border-bottom: rgba(251,230,235,.9);
+  transition: color 0.5s;
+}
+
+.header ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color: @red;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+}
+
+.header .menu-icon .navicon {
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 25px;
+  background-color: white;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background-color: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 8px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -8px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+.header li{
+  padding: 10px;
+  text-align: center;
+}
+.header .menu-btn:checked ~ .menu {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width:610px) {
+  .header li {
+    float: left;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
   }
 }
