@@ -68,13 +68,10 @@ a:after{
     background-color: #243F85;
 }
 
-/*
-.col1:hover{
+
+.col:hover{
     background-color: #243F85;
 }
-.col1:active{
-    background-color: #243F85;
-}*/
 /*----------------------------------------*/
 .radiobuttons{
     width: 400px;
