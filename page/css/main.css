@@ -17,24 +17,6 @@
   width: 100px;
   height: 100px;
 }
-.nav__list {
-  display: flex;
-  list-style-type: none;
-}
-.link__href {
-  margin-right: 10px;
-  text-decoration: none;
-  color: lavender;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 0 10px 10px 10px;
-  border-bottom: rgba(251, 230, 235, 0.9);
-}
-.link__href:hover {
-  border-bottom: 2px solid #EC002B;
-  color: #EC002B;
-}
 .header {
   min-height: 40px;
   position: relative;
@@ -55,7 +37,6 @@ a {
   text-align: center;
   text-decoration: none;
   color: lavender;
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
   border-bottom: rgba(251, 230, 235, 0.9);
