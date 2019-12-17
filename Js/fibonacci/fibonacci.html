@@ -1,0 +1,25 @@
+
+<script>
+	
+function getFiboNumbers(){
+	arrFibo = [];
+	arrFibo[0] = 0;
+	arrFibo[1] = 1;
+	
+	let number = prompt("Введите число");
+	if (isFinite(number)){
+	
+	for (i = 2; i < number; i++){
+		arrFibo[i] = arrFibo[i-1] + arrFibo[i-2];
+	}
+	
+	console.log(arrFibo);
+	getFiboNumbers();
+	}else{
+		return;
+	}
+}
+
+getFiboNumbers();
+
+</script>
